@@ -1,0 +1,103 @@
+/* General rules */
+
+/* Magic CSS that centers an element within another. Taken from here: https://css-tricks.com/centering-css-complete-guide/ */
+.center-children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rules for body */
+
+html, body {
+   height:100%; 
+   margin:0; 
+}
+
+body { 
+  display:flex; 
+  flex-direction:column; 
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+
+
+/* Rules for main */
+
+main {
+  margin: auto;
+}
+
+#search-box {
+    max-width: 582px;
+    width: 75vw;
+    height: 44px;
+}
+
+.logo, .search-buttons {
+    margin: 1em;
+}
+
+.search-buttons input {
+  /* Adds space between the buttons. Does add unecessary space to the right of the rightmost button. Not sure if this is a problem */
+  margin-right: 1em;
+}
+
+/* Rules for nav */
+
+.navbar {
+  float: right;
+  list-style-type: none;
+}
+
+.nav-item {
+  display: inline;
+  margin-right: 1em;
+}
+
+.nav-link {
+  color: #272727;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #424242;
+}
+
+.sign-in-btn {
+  background-color: #4285f4;
+  color: white;
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+/* Rules for footer */
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  color: #5f6368;
+}
+
+.footer-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-item {
+  margin-right: 2em;
+}
+
+.footer-item a {
+  color: #5f6368;
+  text-decoration: none;
+}
+.footer-item a:hover {
+  text-decoration: underline;
+}
